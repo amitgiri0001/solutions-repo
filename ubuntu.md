@@ -1,4 +1,5 @@
-Register ntfs drive to ubuntu(otherwise it would create problem every time you restart if any drive ref is given to some app)
+##Register ntfs drive to ubuntu(otherwise it would create problem every time you restart if any drive ref is given to some app)
+---
 1: sudo blkid(will give UUID of drives) or sudo blkid -c /dev/null
 2:  sudo mkdir /media/"name of drive in ubuntu(anything)"
 3: sudo nano /etc/fstab (add drive in fstab list with UUID of drive wanna add like this
