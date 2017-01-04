@@ -23,3 +23,7 @@ Check credential for role
 psql -U postgres -h localhost postgres
 
 Alter user "username" with password 'new-password'
+
+
+GUI for postgresql:
+sudo apt-get install pgadmin3
