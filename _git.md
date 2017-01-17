@@ -14,11 +14,11 @@ $ git commit -c ORIG_HEAD
 #Check for byebug and debugger "Pre-commit"
 
 -#!/bin/sh
-#
-# Check for debugging statements before commiting your code.
-#
+-#
+-# Check for debugging statements before commiting your code.
+-#
 
-# List of keywords to search for in regex format
+-# List of keywords to search for in regex format
 TARGETS='byebug|debugger'
 
 echo "Running debug check..."
