@@ -32,12 +32,18 @@ RES="$(egrep -nr --include=*.rb --include=*.erb --include=*.js --include=*.haml 
 COUNT="$(egrep -nr --include=*.rb --include=*.erb --include=*.js --include=*.haml --include=*.html  $TARGETS | wc -l)"
 
 if [ "$COUNT" -gt "0" ]; then
+
   echo "\033[31m \n$RES"
 
+
   echo "\033[33m \nDebugging functions were found in your code!"
+
   echo "\033[31m \nChanges were not committed."
+
   exit 1
 else
-  echo "\033[32m \nNo debugger or byebug were found.  Nice job, Ace!\n";
-  exit 0
+  
+   echo "\033[32m \nNo debugger or byebug were found.  Nice job, Ace!\n";
+   exit 0
+   
 fi
