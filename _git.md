@@ -28,6 +28,7 @@ TARGETS='byebug|debugger'
 echo "Running debug check..."
 
 RES="$(egrep -nr --include=*.rb --include=*.erb --include=*.js --include=*.haml --include=*.html  $TARGETS)"
+
 COUNT="$(egrep -nr --include=*.rb --include=*.erb --include=*.js --include=*.haml --include=*.html  $TARGETS | wc -l)"
 
 if [ "$COUNT" -gt "0" ]; then
