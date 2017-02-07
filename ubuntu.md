@@ -122,5 +122,7 @@ sudo apt-get dist-upgrade
 
 sudo apt-get update
 
+# find PID of acquired port
+lsof -nPi tcp:the-port
 
 
