@@ -1,6 +1,3 @@
-
-Remove all images and containers
-
 Delete all containers
 
 docker rm $(docker ps -a -q)
@@ -8,3 +5,23 @@ docker rm $(docker ps -a -q)
 Delete all images
 
 docker rmi $(docker images -q)
+
+# docker network
+ docker network ls
+
+# docker grep container(all, whether running or not) by name
+ docker ps -a | grep <container name>
+ 
+# restart conatiner   
+ docker restart <container-id>
+ 
+# docker log on container
+ docker logs <container-id>
+
+# docker container tree with dependency
+ pstree -pa | less
+ pstree -pa | grep elastic
+
+# get occupied port
+ netstat -pa 
+ netstat -pa  | grep 9200
