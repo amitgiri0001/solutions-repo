@@ -130,4 +130,12 @@ cvt 1600x900
 xrandr --newmode "1600x900_60.00" 118.25 1600 1696 1856 2112 900 903 908 934 -hsync +vsync
 xrandr --addmode VGA1 1600x900_60.00 
 
+# Ubuntu system slowdowns after suspend and resume
+http://askubuntu.com/questions/792605/ubuntu-16-04-lts-too-slow-after-suspend-and-resume
+sudo apt-get install msr-tools
+sudo modprobe msr
+sudo rdmsr -a 0x19a
 
+if rdmsr does not give back 0 then:
+
+sudo wrmsr -a 0x19a 0x0
