@@ -20,8 +20,10 @@ docker rmi $(docker images -q)
 
 # docker container tree with dependency
  pstree -pa | less
+ 
  pstree -pa | grep elastic
 
 # get occupied port
  netstat -pa 
+ 
  netstat -pa  | grep 9200
