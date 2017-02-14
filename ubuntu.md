@@ -126,9 +126,9 @@ sudo apt-get update
 lsof -nPi tcp:the-port
 
 # System resolution (1600x900) if not support
-cvt 1600x900
-xrandr --newmode "1600x900_60.00" 118.25 1600 1696 1856 2112 900 903 908 934 -hsync +vsync
-xrandr --addmode VGA1 1600x900_60.00 
+ cvt 1600x900
+ xrandr --newmode "1600x900_60.00" 118.25 1600 1696 1856 2112 900 903 908 934 -hsync +vsync
+ xrandr --addmode VGA1 1600x900_60.00 
 
 # Ubuntu system slowdowns after suspend and resume
 http://askubuntu.com/questions/792605/ubuntu-16-04-lts-too-slow-after-suspend-and-resume
