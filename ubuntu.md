@@ -134,6 +134,7 @@ lsof -nPi tcp:the-port
 
 # Ubuntu system slowdowns after suspend and resume
 http://askubuntu.com/questions/792605/ubuntu-16-04-lts-too-slow-after-suspend-and-resume
+
 sudo apt-get install msr-tools
 sudo modprobe msr
 sudo rdmsr -a 0x19a
