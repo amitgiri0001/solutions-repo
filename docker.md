@@ -9,7 +9,7 @@ docker rmi $(docker images -q)
 # docker network
  docker network ls
 
-# docker grep container(all, whether running or not) by name
+# docker grep container(all, both running and steady) by name
  docker ps -a | grep <container name>
  
 # restart conatiner   
