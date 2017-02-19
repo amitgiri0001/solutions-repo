@@ -144,3 +144,7 @@ sudo rdmsr -a 0x19a
 if rdmsr does not give back 0 then:
 
 sudo wrmsr -a 0x19a 0x0
+
+
+# Teamviewer(12) restart
+sudo teamviewer daemon start/stop
