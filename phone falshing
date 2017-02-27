@@ -1,0 +1,7 @@
+#flash recovery 
+
+fastboot devices
+fastboot erase recovery
+fastboot flash recovery <file path>.img
+fastboot reboot (or sometimes directly goto recovery mode by pressing certain keys acc to your phone)
+
