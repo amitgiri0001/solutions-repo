@@ -152,3 +152,9 @@ sudo wrmsr -a 0x19a 0x0
 
 # Teamviewer(12) restart
 sudo teamviewer daemon start/stop
+
+# Enable/Disable firewall
+sudo ufw enable
+
+# expose aport in ubuntu
+sudo ufw allow 1701
