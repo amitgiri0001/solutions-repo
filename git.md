@@ -1,5 +1,5 @@
 
- #Find commit with message
+ # Find commit with message
    git log --all --grep='typeahead'
   
  # Show changes in certain commit
