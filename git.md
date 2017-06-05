@@ -7,3 +7,10 @@
   
  # Checkout certain lines in file
    git checkout -p
+   
+ # find all deleted/ edited/ new files
+   git log --diff-filter=D --summary | grep delete
+   
+ # find file history by commits
+   git log --all "file path"
+   
