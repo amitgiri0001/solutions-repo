@@ -24,6 +24,9 @@ sudo ln  -s /usr/bin/nodejs /usr/bin/node
 sudo chown -R $USER:$GROUP ~/.npm
 sudo chown -R $USER:$GROUP ~/.config
 
+// nvm install
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+
 // if ruby required
 sudo apt-get install ruby-dev
 
