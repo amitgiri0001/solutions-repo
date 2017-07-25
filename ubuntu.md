@@ -161,3 +161,10 @@ sudo ufw enable
 
 # expose aport in ubuntu
 sudo ufw allow 1701
+
+# Run process even after terminal close
+ $ nohup node app &
+ $ echo $! > node-instance.pid
+ Then, when you want to kill it,
+
+ $ kill `cat node-instance.pid`
