@@ -14,3 +14,5 @@
  # find file history by commits
    git log --all "file path"
    
+ # pull with automerge using "theirs/ours"
+   git pull --strategy-option theirs
